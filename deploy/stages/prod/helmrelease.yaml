@@ -60,7 +60,7 @@ spec:
         tag: v4
         replicas: 1
         env:
-          FEATURE_LIVE_TREND: "true"
+          FEATURE_LIVE_TREND: "false"
     frontend:
       image:
         tag: latest
