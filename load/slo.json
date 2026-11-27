@@ -3,7 +3,7 @@
   "errorRate": 0.01,
   "steps": {
     "statistics_me": { "p95": 100, "p99": 300 },
-    "statistics_trend": { "p95": 100, "p99": 300 },
+    "statistics_trend": { "p95": 30, "p99": 100 },
     "statistics_global": { "p95": 100, "p99": 300 },
     "tracking_list": { "p95": 100, "p99": 300 },
     "tracking_create": { "p95": 150, "p99": 500 },
