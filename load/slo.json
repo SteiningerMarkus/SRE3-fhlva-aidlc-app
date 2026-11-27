@@ -1,5 +1,5 @@
 {
-  "_comment": "Your group's SLOs as k6 thresholds. Placeholder values: replace them with your own. errorRate is a fraction (0.01 = 1 %); p95/p99 are milliseconds. Step names are the 'name' tags in script.js.",
+  "_comment": "G1-Builders SLOs",
   "errorRate": 0.01,
   "steps": {
     "statistics_me": { "p95": 100, "p99": 300 },
