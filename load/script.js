@@ -170,7 +170,7 @@ export function visit(data) {
 
   const steps = [
     ['statistics_me', () => http.get(`${URLS.statistics}/statistics/me`, params('statistics_me', token))],
-    ['statistics_trend', () => http.get(`${URLS.statistics}/statistics/me/trend?days=30`, params('statistics_trend', token))],
+    ['statistics_trend', () => http.get(`${URLS.statistics}/statistics/me/trend?days=365`, params('statistics_trend', token))],
     ['tracking_list', () => http.get(`${URLS.tracking}/tracking/entries?page=0&size=20`, params('tracking_list', token))],
   ];
   if (Math.random() < WRITE_RATIO) {
