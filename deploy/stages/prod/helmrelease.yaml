@@ -54,13 +54,12 @@ spec:
         tag: latest
     statistics-service:
       image:
-        tag: v2
+        tag: v4
       canary:
-        enabled: true
+        enabled: false
         tag: v4
         replicas: 1
-        env:
-          FEATURE_LIVE_TREND: "true"
+        env: {}
     frontend:
       image:
         tag: latest
