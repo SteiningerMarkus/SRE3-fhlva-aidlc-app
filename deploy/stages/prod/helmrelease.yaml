@@ -34,7 +34,7 @@ spec:
   # Runs the chart's Helm tests (the k6 gate) after every install/upgrade.
   # A failing test counts as a failed release and triggers the rollback above.
   test:
-    enable: false
+    enable: true
   values:
     namespace:
       create: false
@@ -56,10 +56,11 @@ spec:
       image:
         tag: v2
       canary:
-        enabled: false
-        tag: v2
+        enabled: true
+        tag: v4
         replicas: 1
-        env: {}
+        env:
+          FEATURE_LIVE_TREND: "true"
     frontend:
       image:
         tag: latest
